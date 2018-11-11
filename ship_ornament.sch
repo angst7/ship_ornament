@@ -1,0 +1,383 @@
+EESchema Schematic File Version 4
+LIBS:ship_ornament-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C2
+U 1 1 5BBD652B
+P 6675 2800
+F 0 "C2" V 6927 2800 50  0000 C CNN
+F 1 "0.1uF" V 6836 2800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6713 2650 50  0001 C CNN
+F 3 "~" H 6675 2800 50  0001 C CNN
+	1    6675 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6925 2950 6925 2800
+Wire Wire Line
+	6925 2800 6825 2800
+Connection ~ 6925 2800
+$Comp
+L power:GND #PWR03
+U 1 1 5BBD6884
+P 6375 2800
+F 0 "#PWR03" H 6375 2550 50  0001 C CNN
+F 1 "GND" V 6380 2672 50  0000 R CNN
+F 2 "" H 6375 2800 50  0001 C CNN
+F 3 "" H 6375 2800 50  0001 C CNN
+	1    6375 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BBD6DC4
+P 6275 3150
+F 0 "C1" V 6527 3150 50  0000 C CNN
+F 1 "0.1uF" V 6436 3150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6313 3000 50  0001 C CNN
+F 3 "~" H 6275 3150 50  0001 C CNN
+	1    6275 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5BBD6E96
+P 6025 3150
+F 0 "#PWR02" H 6025 2900 50  0001 C CNN
+F 1 "GND" V 6030 3022 50  0000 R CNN
+F 2 "" H 6025 3150 50  0001 C CNN
+F 3 "" H 6025 3150 50  0001 C CNN
+	1    6025 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6425 3150 6475 3150
+$Comp
+L Device:LED_Small D1
+U 1 1 5BBD7D0F
+P 4600 3150
+F 0 "D1" H 4600 3385 50  0000 C CNN
+F 1 "LED_Small" H 4600 3294 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" V 4600 3150 50  0001 C CNN
+F 3 "~" V 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BBD7D16
+P 5050 3150
+F 0 "R1" V 4843 3150 50  0000 C CNN
+F 1 "520" V 4934 3150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 4980 3150 50  0001 C CNN
+F 3 "~" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_ST_STM32L0:STM32L011D3Px U1
+U 1 1 5BC15926
+P 6925 3450
+F 0 "U1" H 7050 4050 50  0000 C CNN
+F 1 "STM32L011D3Px" H 7300 3950 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6625 2950 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00206508.pdf" H 6925 3450 50  0001 C CNN
+	1    6925 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 3150 6125 3150
+$Comp
+L power:GND #PWR05
+U 1 1 5BC1665B
+P 6925 4175
+F 0 "#PWR05" H 6925 3925 50  0001 C CNN
+F 1 "GND" V 6930 4047 50  0000 R CNN
+F 2 "" H 6925 4175 50  0001 C CNN
+F 3 "" H 6925 4175 50  0001 C CNN
+	1    6925 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 4175 6925 4075
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5BC16975
+P 8150 2675
+F 0 "BT1" H 8268 2771 50  0000 L CNN
+F 1 "Battery_Cell" H 8268 2680 50  0000 L CNN
+F 2 "new_footprints:BATT-HLD-001" V 8150 2735 50  0001 C CNN
+F 3 "~" V 8150 2735 50  0001 C CNN
+	1    8150 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR06
+U 1 1 5BC16A7A
+P 8150 2325
+F 0 "#PWR06" H 8150 2175 50  0001 C CNN
+F 1 "+BATT" H 8165 2498 50  0000 C CNN
+F 2 "" H 8150 2325 50  0001 C CNN
+F 3 "" H 8150 2325 50  0001 C CNN
+	1    8150 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2325 8150 2475
+$Comp
+L power:+BATT #PWR04
+U 1 1 5BC16B64
+P 6925 2275
+F 0 "#PWR04" H 6925 2125 50  0001 C CNN
+F 1 "+BATT" H 6940 2448 50  0000 C CNN
+F 2 "" H 6925 2275 50  0001 C CNN
+F 3 "" H 6925 2275 50  0001 C CNN
+	1    6925 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5BC16C76
+P 8150 2950
+F 0 "#PWR07" H 8150 2700 50  0001 C CNN
+F 1 "GND" V 8155 2822 50  0000 R CNN
+F 2 "" H 8150 2950 50  0001 C CNN
+F 3 "" H 8150 2950 50  0001 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2950 8150 2775
+$Comp
+L power:GND #PWR01
+U 1 1 5BC16E02
+P 4375 4275
+F 0 "#PWR01" H 4375 4025 50  0001 C CNN
+F 1 "GND" V 4380 4147 50  0000 R CNN
+F 2 "" H 4375 4275 50  0001 C CNN
+F 3 "" H 4375 4275 50  0001 C CNN
+	1    4375 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3150 4375 3150
+Wire Wire Line
+	4375 3150 4375 3500
+Wire Wire Line
+	4500 3500 4375 3500
+Connection ~ 4375 3500
+Wire Wire Line
+	4375 3500 4375 3850
+Wire Wire Line
+	4500 3850 4375 3850
+Connection ~ 4375 3850
+Wire Wire Line
+	4375 3850 4375 4200
+Wire Wire Line
+	4500 4200 4375 4200
+Connection ~ 4375 4200
+Wire Wire Line
+	4375 4200 4375 4275
+Wire Wire Line
+	4900 4200 4700 4200
+Wire Wire Line
+	4700 3850 4900 3850
+Wire Wire Line
+	4700 3500 4900 3500
+Wire Wire Line
+	4700 3150 4900 3150
+Wire Wire Line
+	5200 3150 5325 3150
+Wire Wire Line
+	5200 3500 5325 3500
+Wire Wire Line
+	5200 3850 5325 3850
+Wire Wire Line
+	5200 4200 5325 4200
+Text Label 5325 4200 0    50   ~ 0
+WHT_LED
+Text Label 5325 3850 0    50   ~ 0
+BLUE_LED
+Text Label 5325 3500 0    50   ~ 0
+RED_LED2
+Text Label 5325 3150 0    50   ~ 0
+RED_LED1
+Wire Wire Line
+	7325 3850 7500 3850
+Wire Wire Line
+	7325 3750 7500 3750
+Text Label 7500 3850 0    50   ~ 0
+SWCLK
+Text Label 7500 3750 0    50   ~ 0
+SWDIO
+Wire Wire Line
+	6475 3150 6475 3300
+Wire Wire Line
+	6475 3300 6250 3300
+Connection ~ 6475 3150
+Wire Wire Line
+	6475 3150 6525 3150
+Text Label 6250 3300 0    50   ~ 0
+NRST
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5BC1AAA1
+P 8750 3950
+F 0 "J1" H 8725 4275 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9100 4200 50  0000 C CNN
+F 2 "Connect:Tag-Connect_TC2030-IDC-NL" H 8750 3950 50  0001 C CNN
+F 3 "~" H 8750 3950 50  0001 C CNN
+	1    8750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5BC1AB35
+P 8450 4100
+F 0 "#PWR09" H 8450 3850 50  0001 C CNN
+F 1 "GND" V 8455 3972 50  0000 R CNN
+F 2 "" H 8450 4100 50  0001 C CNN
+F 3 "" H 8450 4100 50  0001 C CNN
+	1    8450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR08
+U 1 1 5BC1AB5C
+P 8450 3800
+F 0 "#PWR08" H 8450 3650 50  0001 C CNN
+F 1 "+BATT" H 8465 3973 50  0000 C CNN
+F 2 "" H 8450 3800 50  0001 C CNN
+F 3 "" H 8450 3800 50  0001 C CNN
+	1    8450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4050 8450 4050
+Wire Wire Line
+	8450 4050 8450 4100
+Wire Wire Line
+	8550 3950 8350 3950
+Text Label 8350 3950 0    50   ~ 0
+NRST
+Wire Wire Line
+	9050 3850 9200 3850
+Wire Wire Line
+	9050 3950 9200 3950
+Text Label 9200 3850 0    50   ~ 0
+SWDIO
+Text Label 9200 3950 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	6525 3850 6400 3850
+Wire Wire Line
+	6400 3850 6400 4075
+Wire Wire Line
+	6400 4075 6925 4075
+Connection ~ 6925 4075
+Wire Wire Line
+	6925 4075 6925 4050
+Wire Wire Line
+	7325 3250 7500 3250
+Wire Wire Line
+	7325 3150 7500 3150
+Wire Wire Line
+	7325 3550 7500 3550
+Wire Wire Line
+	7325 3650 7500 3650
+Text Label 7500 3650 0    50   ~ 0
+WHT_LED
+Text Label 7500 3550 0    50   ~ 0
+BLUE_LED
+Text Label 7500 3150 0    50   ~ 0
+RED_LED2
+Text Label 7500 3250 0    50   ~ 0
+RED_LED1
+Wire Wire Line
+	6925 2275 6925 2800
+$Comp
+L Device:R R2
+U 1 1 5BC20C05
+P 5050 3500
+F 0 "R2" V 4843 3500 50  0000 C CNN
+F 1 "520" V 4934 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 4980 3500 50  0001 C CNN
+F 3 "~" H 5050 3500 50  0001 C CNN
+	1    5050 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BC20C43
+P 5050 3850
+F 0 "R3" V 4843 3850 50  0000 C CNN
+F 1 "520" V 4934 3850 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 4980 3850 50  0001 C CNN
+F 3 "~" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BC20C7F
+P 5050 4200
+F 0 "R4" V 4843 4200 50  0000 C CNN
+F 1 "520" V 4934 4200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" V 4980 4200 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5BC21574
+P 4600 3500
+F 0 "D2" H 4600 3735 50  0000 C CNN
+F 1 "LED_Small" H 4600 3644 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" V 4600 3500 50  0001 C CNN
+F 3 "~" V 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 5BC215A6
+P 4600 3850
+F 0 "D3" H 4600 4085 50  0000 C CNN
+F 1 "LED_Small" H 4600 3994 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" V 4600 3850 50  0001 C CNN
+F 3 "~" V 4600 3850 50  0001 C CNN
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 5BC215DC
+P 4600 4200
+F 0 "D4" H 4600 4435 50  0000 C CNN
+F 1 "LED_Small" H 4600 4344 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" V 4600 4200 50  0001 C CNN
+F 3 "~" V 4600 4200 50  0001 C CNN
+	1    4600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3850 8450 3850
+Wire Wire Line
+	8450 3850 8450 3800
+Wire Wire Line
+	6525 2800 6375 2800
+$EndSCHEMATC
