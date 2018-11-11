@@ -8,3 +8,5 @@ The LEDs are routed to four PWM output pins of an 14 pin TSSOT STM32L011 to allo
 The battery is a CR2032.  The footprint is for part BAT-HLD-001 available at digikey and mouser. 
 
 All the passives and LEDs are 0603.
+
+The programming header is for a TC-2030-NL by Tag Connect.  Or you can just solder leads to the pads and use anything you like.
